@@ -42,11 +42,3 @@ swipeInit();
 $('.carousel').carousel({
   interval: false
 })
-
-$('.carousel-prev').click(function(){
-	$('.carousel').carousel('prev');
-});
-
-$('.carousel-next').click(function(){
-	$('.carousel').carousel('next');
-});

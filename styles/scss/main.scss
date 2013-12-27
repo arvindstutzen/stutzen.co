@@ -15,10 +15,6 @@ $portfolio-bgColor: #123456;
 	}
 }
 
-.top {
-		
-}
-
 .section {
   position: relative;		
   height: $section-height;
@@ -37,53 +33,40 @@ $portfolio-bgColor: #123456;
   z-index: 1;
 }
 
-#leftbox{
-	position: relative;	
-	width: 600px;
-	display: inline-block;
-	overflow-y: hidden;
-	float: left;
+
+#carousel-main{
+	width: 1000px;
 	height: 300px;
-	z-index: 2;
-	margin-left: 150px;
-	margin-top: 130px;
-	background: $portfolio-bgColor;
-}
-
-#rightbox{
-	position: relative;	
-	width: 500px;
-	display: inline-block;
-	overflow-y: hidden;
-	float: right;
-	height: 500px;
-	z-index: 2;
-	margin: auto;
-
-	#carousel-right{
-			width: 300px;
-			float: right;
-			margin: auto auto;
-			margin-right: 120px;
-
-			img{
-				height: 400px;
-				margin: 80px auto;
+	position: relative;
+	margin: 130px auto auto 150px;
+	#splitter{
+		width: 1000px;
+			#leftbox{
+				position: relative;	
+				width: 500px;
+				display: inline-block;
+				overflow-y: hidden;
+				height: 300px;
+				z-index: 1;
+				margin: auto;
+				margin-left: 100px; 
+			//	background: $portfolio-bgColor;
+				color: white;
 			}
 
-		#firstslide{ 
-		height: inherit;
-		overflow-y: hidden;
-		
-		}
-		
-		#secondslide{
-			height: inherit;
-			overflow-y: hidden;
-			// background: url(../images/portfolio/reminme2.jpg) no-repeat top center;
-		}
+			#rightbox{
+				position: relative;	
+				width: 300px;
+				display: inline-block;
+				overflow-y: hidden;
+				height: 300px;
+				z-index: 1;
+				margin: auto;
+				img{
+					height: 400px;
+				}
+			}
 	}
-
 }
 
 
