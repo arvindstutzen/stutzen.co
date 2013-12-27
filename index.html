@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="styles/bootstrap-responsive.css">
         <link rel="stylesheet" href="styles/bootstrap-override.css">
         <!-- endbuild -->
+
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -27,18 +28,129 @@
         <![endif]-->
 
 
-        <div class="hero-unit">
-          <p>You now have</p>
-          <ul>
-            <li> a new Stutzen.co</li>
+
+    <div id="skrollr-body">
+
+
+        
+        <ul id='Nav' class='nav nav-tabs navbar-fixed-top'>
+            <li><a href='#'> Top </a></li>
+            <li><a href='#portfolio'> Portfolio </a></li>
+            <li class='pull-right'> <img src='../images/stutzen_S.jpg'></img> </li>
+<!--             <li><a href="#wambo">150px before #wambo</a></li>
+            <li><a href="#section1" data-menu-top="1000">1000 pixels down</a></li>
+            <li><a href="#awesome" data-menu-top="75p">75% down</a></li> -->
+        </ul>
+        
+
+        <div id='about_us' class='section' data-0="background-position: centre centre;" data-100000="background-position:0px -50000px;">  </div>
+
+        <div id='portfolio' class='section'> 
+            <div id='splitter'> 
+              <div class='carousel'> 
+                <div id='leftbox'>
+                   <div id="carousel-left" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                          </ol>
+                            <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                    <div class="item active">
+                                 
+                                      <div class="carousel-caption">
+                                       <h3>...</h3>
+                                        <p>...</p>
+                                      </div>
+                                    </div>
+                                    <div class="item">
+                                   
+                                      <div class="carousel-caption">
+                                       <h3>...</h3>
+                                        <p>...</p>
+                                      </div>
+                                    </div>
+                              </div>
+
+                          <!-- Controls -->
+                          <a  class="left carousel-control carousel-prev" href="#carousel-left" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          <a class="right carousel-control carousel-next" href="#carousel-left" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>
+
+                            <a  class="left carousel-control carousel-prev" href="#carousel-right" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          <a class="right carousel-control carousel-next" href="#carousel-right" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>  
+                   </div>       
+                </div>
+                <div id='rightbox' >
+                      <div id="carousel-right" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                          </ol>
+                            <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                    <div class="item active">
+                                      <img src="images/portfolio/CABY-UI-P19-3.jpg" alt="...">
+                                      <div class="carousel-caption">
+                                       <h3>...</h3>
+                                        <p>...</p>
+                                      </div>
+                                    </div>
+                                    <div class="item">
+                                      <img src="images/portfolio/reminme2.png" alt="...">
+                                      <div class="carousel-caption">
+                                       <h3>...</h3>
+                                        <p>...</p>
+                                      </div>
+                                    </div>
+                              </div>
+
+                                <!-- Controls -->
+<!--                           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a> -->
+                    </div>
+                </div>
+              </div>  
+            </div>
         </div>
+        
+         <!-- <button type="button" class="btn btn-default btn-group-justified"> <a href='#Nav'>top</a> </button> -->
+        
+
+    </div>
 
 
 
-        <script src="scripts/jquery.js"></script>
+        <script src="scripts/jquery-1.10.2.js"></script>
         <script src="scripts/bootstrap.js"></script>
-        <script src="scripts/swiper.min.js"></script>
+        <script src="scripts/skrollr.js"></script>
+        <script src="scripts/animatescroll.js"></script>
+        <script src="scripts/main.js"></script>
+        
+        
 
+        <script type="text/javascript">
+            setTimeout(function() {
+                var s = skrollr.init({
+                    forceHeight: false
+                });
+
+                skrollr.menu.init(s);
+            }, 500);
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -50,8 +162,5 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
 </body>
 </html>

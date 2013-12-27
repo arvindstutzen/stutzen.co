@@ -1,0 +1,124 @@
+@import "compass/reset";
+@import "compass/css3";
+
+$Nav-height: 40px;
+$section-height: 580px;
+$portfolio-bgColor: #123456;
+
+
+#Nav{
+	height: $Nav-height;
+	background: #FFBD15;
+	img{
+		height: auto;
+		top: 0;
+	}
+}
+
+.top {
+		
+}
+
+.section {
+  position: relative;		
+  height: $section-height;
+  width: auto;
+}
+
+#about_us{
+  background: transparent url(../images/stutzen_logo.jpg) no-repeat center center;
+  top: $Nav-height;
+}
+
+#portfolio{
+  // background: $portfolio-bgColor;
+  background: #999999 url(../images/android_wallpaper.png) repeat center 285px;
+  overflow-y: hidden;
+  z-index: 1;
+}
+
+#leftbox{
+	position: relative;	
+	width: 600px;
+	display: inline-block;
+	overflow-y: hidden;
+	float: left;
+	height: 300px;
+	z-index: 2;
+	margin-left: 150px;
+	margin-top: 130px;
+	background: $portfolio-bgColor;
+}
+
+#rightbox{
+	position: relative;	
+	width: 500px;
+	display: inline-block;
+	overflow-y: hidden;
+	float: right;
+	height: 500px;
+	z-index: 2;
+	margin: auto;
+
+	#carousel-right{
+			width: 300px;
+			float: right;
+			margin: auto auto;
+			margin-right: 120px;
+
+			img{
+				height: 400px;
+				margin: 80px auto;
+			}
+
+		#firstslide{ 
+		height: inherit;
+		overflow-y: hidden;
+		
+		}
+		
+		#secondslide{
+			height: inherit;
+			overflow-y: hidden;
+			// background: url(../images/portfolio/reminme2.jpg) no-repeat top center;
+		}
+	}
+
+}
+
+
+
+.nav-tabs {
+  // border-bottom: 1px solid #dddddd;
+  // border: 0px;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.428571429;
+      color: #FFFFFF !important;
+  border-radius: 4px 4px 0 0;
+}
+.nav-tabs > li > a:hover {
+    color: #FFFFFF !important;
+  background-color: transparent !important; 
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+}
+
+
+
+
