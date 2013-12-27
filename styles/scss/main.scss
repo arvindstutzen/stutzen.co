@@ -39,6 +39,7 @@ $portfolio-bgColor: #123456;
 	height: 300px;
 	position: relative;
 	margin: 130px auto auto 150px;
+	background: $portfolio-bgColor;
 	#splitter{
 		width: 1000px;
 			#leftbox{
@@ -50,7 +51,7 @@ $portfolio-bgColor: #123456;
 				z-index: 1;
 				margin: auto;
 				margin-left: 100px; 
-			//	background: $portfolio-bgColor;
+
 				color: white;
 			}
 

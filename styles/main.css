@@ -100,12 +100,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 300px;
   position: relative;
   margin: 130px auto auto 150px;
+  background: #123456;
 }
-/* line 42, scss/main.scss */
+/* line 43, scss/main.scss */
 #carousel-main #splitter {
   width: 1000px;
 }
-/* line 44, scss/main.scss */
+/* line 45, scss/main.scss */
 #carousel-main #splitter #leftbox {
   position: relative;
   width: 500px;
@@ -117,7 +118,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-left: 100px;
   color: white;
 }
-/* line 57, scss/main.scss */
+/* line 58, scss/main.scss */
 #carousel-main #splitter #rightbox {
   position: relative;
   width: 300px;
@@ -127,18 +128,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 1;
   margin: auto;
 }
-/* line 65, scss/main.scss */
+/* line 66, scss/main.scss */
 #carousel-main #splitter #rightbox img {
   height: 400px;
 }
 
-/* line 78, scss/main.scss */
+/* line 79, scss/main.scss */
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
 }
 
-/* line 83, scss/main.scss */
+/* line 84, scss/main.scss */
 .nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.428571429;
@@ -146,13 +147,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 4px 4px 0 0;
 }
 
-/* line 89, scss/main.scss */
+/* line 90, scss/main.scss */
 .nav-tabs > li > a:hover {
   color: #FFFFFF !important;
   background-color: transparent !important;
 }
 
-/* line 95, scss/main.scss */
+/* line 96, scss/main.scss */
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
@@ -160,7 +161,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   cursor: default;
 }
 
-/* line 101, scss/main.scss */
+/* line 102, scss/main.scss */
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
